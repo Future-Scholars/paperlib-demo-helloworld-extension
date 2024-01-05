@@ -5,7 +5,7 @@ class PaperlibHelloworldExtension extends PLExtension {
 
   constructor() {
     super({
-      id: "@future-scholars/paperlib-demo-helloworld-extension",
+      id: "paperlib-demo-helloworld-extension",
       defaultPreference: {
         msg: {
           type: "string",
@@ -89,8 +89,9 @@ class PaperlibHelloworldExtension extends PLExtension {
     // we get the message from the preference of this extension by calling PLExtAPI.extensionPreferenceService.get()
     //
     this.disposeCallbacks.push(
-      PLAPI.commandService.on("command_echo_event" as any, () => {
+      PLAPI.commandService.on("command_echo_event" as any, (value) => {
         let msg = PLExtAPI.extensionPreferenceService.get(this.id, "msg");
+
         if (PLExtAPI.extensionPreferenceService.get(this.id, "signature")) {
           if (
             PLExtAPI.extensionPreferenceService.get(this.id, "lang") === "zh"
