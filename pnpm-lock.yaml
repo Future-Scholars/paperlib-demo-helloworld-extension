@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^20.10.4
     version: 20.10.5
   paperlib-api:
-    specifier: ^0.0.13
-    version: 0.0.13(typescript@5.3.3)(vue@3.4.5)
+    specifier: ^0.0.14
+    version: 0.0.14(typescript@5.3.3)(vue@3.4.5)
   prettier:
     specifier: ^3.1.1
     version: 3.1.1
@@ -1821,8 +1821,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /paperlib-api@0.0.13(typescript@5.3.3)(vue@3.4.5):
-    resolution: {integrity: sha512-uwPVVyHAFJpcOsss/UzkTQTl/tS6xTvvbfJmAzdRjID2cSFNbqVqw5EeP89zWRkhAkvrOvfXwkPZevgb3Ssj8A==}
+  /paperlib-api@0.0.14(typescript@5.3.3)(vue@3.4.5):
+    resolution: {integrity: sha512-1vRLeeMwUGqLEUww9d/SdMcNNAjXerujvosQ0A8Elb9NF0sm8Za/2zNiEhJuLUnquwCt1YgPy+grNxsV3xJRew==}
     engines: {node: '>=16.17.1'}
     dependencies:
       citation-js: 0.6.4
